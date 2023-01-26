@@ -28,6 +28,6 @@ jobs:
       - name: Install Fuel toolchain
         uses: FuelLabs/action-fuel-toolchain@bing/vanilla-install
 
-      - name: Try fuelup
+      - name: Try forc with override
         run: |
-          fuelup --version
+          forc --version
