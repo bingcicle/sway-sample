@@ -27,9 +27,6 @@ jobs:
 
       - name: Install Fuel toolchain
         uses: FuelLabs/action-fuel-toolchain@bing/support-more-toolchains
-        with:
-          toolchain: latest
-          date: 2023-01-18
 
       - name: Check Forc version
         run: forc --version
