@@ -26,11 +26,8 @@ jobs:
           override: true
 
       - name: Install Fuel toolchain
-        uses: FuelLabs/action-fuel-toolchain@bing/support-more-toolchains
+        uses: FuelLabs/action-fuel-toolchain@bing/vanilla-install
 
-      - name: Check Forc version
-        run: forc --version
-
-      - name: Check Sway formatting
-        run: forc fmt
-
+      - name: Try fuelup
+        run: |
+          fuelup --version
