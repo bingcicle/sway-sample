@@ -27,8 +27,11 @@ jobs:
           override: true
 
       - name: Install Fuel toolchain
-        uses: FuelLabs/action-fuel-toolchain@bing/vanilla-install
-
+        uses: FuelLabs/action-fuel-toolchain@0.4.0
+        with:
+          toolchain: latest
+          date: 2023-01-18
+      
       - name: Try forc with override
         run: |
           forc --version
